@@ -13,6 +13,10 @@ public class MethodMain1 {
         Integer integerValue = GenericMethod.<Integer>numberMethod(10);
         Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
 
+        // 타입 매게변수 제한
+        //String s = GenericMethod.<String>genericMethod("hello");
+        //GenericMethod.<String>numberMethod("hello");
+
         System.out.println("타입 추론");
         Integer result2 = GenericMethod.genericMethod(i);
         Integer integerValue2 = GenericMethod.numberMethod(10);
