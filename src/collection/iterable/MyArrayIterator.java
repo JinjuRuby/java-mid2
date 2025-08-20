@@ -13,13 +13,11 @@ public class MyArrayIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-
         return currentIndex < targetArr.length - 1;
     }
 
     @Override
     public Integer next() {
-
         return targetArr[++currentIndex];
     }
 }
