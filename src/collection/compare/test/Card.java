@@ -24,7 +24,7 @@ public class Card implements Comparable<Card>{
         if (this.rank != anotherCard.rank) {
             return Integer.compare(this.rank, anotherCard.rank);
         } else {
-            return this.suit.compareTo(anotherCard.suit); // Enum 클래스가
+            return this.suit.compareTo(anotherCard.suit); // Enum 클래스는 compareTo를 구현하고 있음
         }
     }
 
